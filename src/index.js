@@ -94,6 +94,7 @@ class ExampleWrapper extends PureComponent {
   toggleItemActive = index =>
     this.setState(prevState => {
       const item = prevState.items[index];
+      //  Using concat with no arguments can be used to copy an array. For example:
       const items = prevState.items.concat();
       items[index] = {
         ...item,
